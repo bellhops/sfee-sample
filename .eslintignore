@@ -1,0 +1,7 @@
+node_modules
+build
+*.css
+*.svg
+*.d.ts
+*.test.ts
+*.test.tsx

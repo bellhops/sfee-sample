@@ -1,0 +1,79 @@
+{
+  "name": "book-v2-ts",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "/v2/book",
+  "cracoConfig": "config/craco-config.js",
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@growthbook/growthbook-react": "^0.25.0",
+    "@mona-health/react-input-mask": "^3.0.3",
+    "@mui/icons-material": "^5.14.16",
+    "@mui/material": "^5.14.16",
+    "@segment/analytics-next": "^1.72.2",
+    "@sentry/react": "^7.119.0",
+    "@stripe/react-stripe-js": "^2.8.0",
+    "@stripe/stripe-js": "^2.4.0",
+    "@tanstack/react-query": "^5.8.4",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "dayjs": "^1.11.10",
+    "lodash": "^4.17.21",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.16.0",
+    "react-scripts": "5.0.1",
+    "typescript": "^4.9.5",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "cross-env PORT=3002 BROWSER=none craco start",
+    "build": "craco build",
+    "serve": "serve -s build -p 3002",
+    "prettier": "prettier --write ."
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "lint-staged": {
+    "**/*.{ts,tsx}": [
+      "prettier --write ."
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@craco/craco": "^7.1.0",
+    "@craco/types": "^7.1.0",
+    "@types/lodash": "^4.14.199",
+    "@types/node": "^20.8.8",
+    "@types/prop-types": "^15.7.9",
+    "@types/react": "^18.2.32",
+    "@types/react-dom": "^18.2.14",
+    "@typescript-eslint/eslint-plugin": "^6.7.3",
+    "@typescript-eslint/parser": "^6.7.3",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.50.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "lint-staged": "^15.0.2",
+    "prettier": "^3.0.3",
+    "serve": "^14.2.1"
+  }
+}
